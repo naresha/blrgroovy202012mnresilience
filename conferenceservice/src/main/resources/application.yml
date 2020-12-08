@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: conferenceservice
+  http:
+    client:
+      read-timeout: 4s
+    services:
+      presentation:
+        urls:
+          - http://localhost:8081/
+        read-timeout: 2s
+
+
